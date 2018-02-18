@@ -16,15 +16,11 @@ import java.util.Set;
 
  Assume that the following declarations are given:
 
- class Point2D { public int x; public int y; }
+class Point2D { public int x; public int y; }
 
-
-
- Write a function
+Write a function
 
  class Solution { public int solution(Point2D[] A); }
-
-
 
  that, given an array of points A, representing the locations of the statues, returns the minimal number of rays that Bob must set in order to hit every statue in the room.
 
@@ -33,6 +29,8 @@ import java.util.Set;
  A[0].x = -1 A[0].y = -2 (statue 0) A[1].x = 1 A[1].y = 2 (statue 1) A[2].x = 2 A[2].y = 4 (statue 2) A[3].x = -3 A[3].y = 2 (statue 3) A[4].x = 2 A[4].y = -2 (statue 4) your function should return 4.
 
  As is shown in the image, it is possible to create four rays in such a way that:
+ 
+ https://i.stack.imgur.com/ad5gc.png
 
  the first will hit statue 0;
 
@@ -41,8 +39,6 @@ import java.util.Set;
  the third will hit statue 3;
 
  the fourth will hit statue 4.
-
-
 
 
 
@@ -58,13 +54,13 @@ import java.util.Set;
 
 
 
-
-
  Complexity:
 
  expected worst-case time complexity is O(N);
 
  expected worst-case space complexity is O(N*log(N)), beyond input storage (not counting the storage required for input arguments).
+
+
 
  */
 public class MayanStatues {
